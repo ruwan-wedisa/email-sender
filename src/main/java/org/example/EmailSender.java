@@ -42,7 +42,7 @@ public class EmailSender {
             MimeMessage message = createMimeMessage();
             // Send message
             Transport.send(message);
-            System.out.println("Message sent successfully.");
+            System.out.println("Message sent successfully. message=" + message);
         } catch (MessagingException mex) {
             mex.printStackTrace();
         }
